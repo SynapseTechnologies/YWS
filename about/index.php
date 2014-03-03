@@ -1,16 +1,3 @@
-<?php
-mysql_connect("127.0.0.1", "root", "") or die(mysql_error());
-
-mysql_select_db("admin") or die(mysql_error());
-
-$query = "SELECT `a_content` FROM `articles`";
-$check = mysql_query($query);
-
-$info = mysql_fetch_assoc($check);
-
-echo $info[]
-?>
-
 <!DOCTYPE html>
 <html>
 	<head>
@@ -18,9 +5,9 @@ echo $info[]
 		<meta name="description" content="">
 		<meta name="author" content="Owner">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-		<title>We Are Young , Wild, And look Stunnin | Home</title>
-		<link rel="stylesheet" href="main.css"/>
-		<link rel="favicon" href="/img/favicon.ico"/>
+		<title>About | BURDFIT</title>
+		<link rel="stylesheet" href="/css/main.css"/>
+		<link rel="shortccut icon" href="/img/favicon.ico"/>
       <style>
         *{
           margin: 0px;
@@ -28,7 +15,7 @@ echo $info[]
         }
         body{
           background: -moz-linear-gradient(grey, #EFF584, grey);/* black */
-          background: -webkit-linear-gradient();
+          background: -webkit-linear-gradient(grey, #EFF584, grey);
           color:#EFF584;
           width: 1280px;
           height: 1800px;
@@ -100,12 +87,12 @@ echo $info[]
         }
         #article_1{
           background: black; /*red*/
-          width:360px;
+          width:460px;
           opacity:0.6;
           position: relative;
           left:35px;
           bottom: 0px;
-          height:230px;
+          height:330px;
           border-radius: 5px;
         }
         #a_content{
@@ -113,12 +100,14 @@ echo $info[]
           width:300px;
           height: 50px;
           position: relative;
-          top: 25px;
-          
+          bottom: 120px;
+          left: 160px;
+          opacity: 1;
         }
         #a_foot{
           position: absolute;
-          left:220px;
+          left:260px;
+          width: 300px;
         }
         #a_footer{
           width: 300px;
@@ -187,6 +176,11 @@ echo $info[]
           color:#EFF584;
           text-decoration:none;
         }
+        #selfie{
+            position:relative;
+            left:20px;
+            
+        }
       </style>
 	</head>
 	
@@ -194,7 +188,7 @@ echo $info[]
 		<div id="big_wrapper">
 			<hgroup id="hgroup">
 				<header id="h_main">
-					<h1 id="h1_main">We are Young, Wild, and Look Stunnin</h1>
+					<h1 id="h1_main">About Me | BURDFIT</h1>
 				</header>
 			</hgroup>
 			
@@ -202,56 +196,23 @@ echo $info[]
             <section id="section">
               <article id="article_1">
                 	<header class="article_header" id="ah1">
-                      <h3>Title</h3>
+                      <h3>About Me and BurdFit</h3>
                 	</header>
-                <p name="a5" id="a_content"><?php ?></p>
-                <footer id="a_footer">
-                  <p id="a_foot">- by Jake N.</p>
-                </footer>
-              </article>
-              <article id="article_1">
-                	<header class="article_header" id="ah1">
-                      <h3>Title</h3>
-                	</header>
-                <p name="a4" id="a_content">Hello World</p>
-                <footer id="a_footer">
-                  <p id="a_foot">- by Jake N.</p>
-                </footer>
-              </article>
-              <article id="article_1">
-                	<header class="article_header" id="ah1">
-                      <h3>Title</h3>
-                	</header>
-                <p name="a3" id="a_content">Hello World</p>
-                <footer id="a_footer">
-                  <p id="a_foot">- by Jake N.</p>
-                </footer>
-              </article>
-              <article id="article_1">
-                	<header class="article_header" id="ah1">
-                      <h3>Title</h3>
-                	</header>
-                <p name="a2" id="a_content">Hello World</p>
-                <footer id="a_footer">
-                  <p id="a_foot">- by Jake N.</p>
-                </footer>
-              </article>
-              <article id="article_1">
-                	<header class="article_header" id="ah1">
-                      <h3>Title</h3>
-                	</header>
-                <p name="a1" id="a_content">Hello World</p>
-                <footer id="a_footer">
-                  <p id="a_foot">- by Jake N.</p>
-                </footer>
+                <a href="www.instagram.com/jake3beats/" id="selfie"><img src="https://webmaker.org/img/thumbs/thimble-grey.png" alt="Me"/></a>
+                <p id="a_content">About me. This is a sentance. This is a sentance. This is a sentance. This is a sentance. This is a sentance<br>
+                . This is a sentance. This is a sentance. This is a sentance. This is a sentance. This is a sentance. This is a sentance. This is a sentance</p>
+                
+                        <footer id="a_footer">
+                      <p id="a_foot">- by Jake N.</p>
+                        </footer>
               </article>
             </section>
             
             <aside id="as">
               <nav id="nav">
                 <ol>
-                  <li class="li_aside"><a href="#home">Home</a></li>
-                  <li class="li_aside"><a href="/about/">About</a></li>
+                  <li class="li_aside"><a href="/index.php">Home</a></li>
+                  <li class="li_aside"><a href="#">About</a></li>
                   <li class="li_aside"><a href="/contact/">Contact</a></li>
                   <li class="li_aside"><a href="spreadshirt.burdfit.tk">Shop</a></li>
                 </ol>

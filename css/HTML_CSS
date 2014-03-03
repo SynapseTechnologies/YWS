@@ -1,0 +1,214 @@
+<style>
+*{
+margin: 0px;
+padding:0px;
+}
+body{
+background: -moz-linear-gradient(grey, #EFF584, grey);/* black */
+background: -webkit-linear-gradient();
+color:#EFF584;
+width: 1280px;
+height: 1800px;
+}
+#big_wrapper{
+
+}
+hgroup{
+position: fixed;
+background: black;
+width: 1380px;
+height: 120px;
+}
+#hgroup{
+top:0px;
+left:0px;
+z-index: 400;
+opacity: 1;
+}
+#fgroup{
+top:610px;/* 120+120, then 720-240*/
+left:0px;
+text-align: center;
+z-index:200;
+}
+header{
+position: absolute;
+background:black;
+padding:0px;
+margin: 30px;
+z-index: 100;
+opacity: 1;
+width:1280px;
+}
+footer{
+position: absolute;
+background:black;
+padding:6px;
+margin: 32px;
+width:1280px;
+}
+h1{
+position: relative;
+padding: 1.5px;
+left: 20px;
+z-index: -400;
+}
+#h_main{
+margin-top: 22px;
+margin-left: 10px;
+z-index: 100;
+}
+p{
+left: 20px;
+position: relative;
+}
+section{
+background: -moz-linear-gradient#BA9416, grey);/* green*/
+position: absolute;
+width:430px;
+left:260px;
+top: 180px;
+height: 1200px;
+}
+.article_header{
+position: relative;
+width:290px;
+top: 20px;
+}
+#article_1{
+background: black; /*red*/
+width:460px;
+opacity:0.6;
+position: relative;
+left:35px;
+bottom: 0px;
+height:330px;
+border-radius: 5px;
+}
+#a_content{
+background: black; /*purple*/
+width:300px;
+height: 50px;
+position: relative;
+bottom: 120px;
+left: 160px;
+opacity:0;
+}
+#a_foot{
+position: absolute;
+left:260px;
+width: 300px;
+}
+#a_footer{
+width: 300px;
+height: 20px;
+position:relative;
+top: 30px;
+}
+#as_nav{
+background: black; /*orange*/
+}
+aside{
+position:fixed;
+left:0px;
+top:120px;
+height: 600px;
+width: 150px;
+opacity: 1;
+background:black; /*orange, black*/
+z-index: 100;
+}
+#nav{
+position:relative;
+left: 0px;
+bottom: 120px;
+z-index: 100;
+opacity: 1;
+margin:10px;
+height: 435px;
+background: black; /*indigo, black*/
+}
+ol{
+position:relative;
+left: 0px;
+top:60px;
+margin: inherit;
+
+background: black; /*grey*/
+width: 108px;
+height: 300px;
+list-style-type: none;
+}
+.li_aside{
+position:relative;
+right: 13px;
+top:55px;
+margin: 10px;
+padding: 3px;
+opacity:1;
+z-index: 300;
+background: black;/* magnenta, black*/
+}
+a:link{
+color:#EFF584;
+text-decoration:none;
+font-size: 22px;
+}
+a:hover{
+color:#EFF584;
+text-decoration:none;
+}
+a:visited{
+color:#EFF584;
+text-decoration:none;
+}
+a:active{
+color:#EFF584;
+text-decoration:none;
+}
+#selfie{
+position:relative;
+left:20px;
+
+}
+textarea{
+border-radius: 5px;
+background:black;
+color: white;
+opacity: 0.5;
+border: 1px solid black;
+width: 180px;
+position:relative;
+left: 20px;
+}
+input#email{
+border-radius: 5px;
+background:black;
+color: white;
+opacity: 0.5;
+border: 1px solid black;
+width: 180px;
+position:relative;
+left: 20px;
+
+}
+input#submit{
+border-radius: 5px;
+color:white;
+position:relative;
+background: black;
+border: 1px solid black;
+opacity: 0.5;
+top: 10px;
+left: 20px;
+}
+input#submit:hover{
+border:1px solid grey;
+}
+input#email:hover{
+border:1px solid grey;
+}
+textarea:hover{
+border:1px solid grey;
+}
+</style>
